@@ -1,0 +1,177 @@
+<?php 
+include '../classes/Crud.php';
+$crud = new Crud();
+if (isset($_GET['stud_id'])) {
+$id=$_GET['stud_id'];
+
+ $registration = $crud->Read("stud_registration","`stud_id`='$id'");
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="different types of invoice/bill/tally designed with friendly and markup using modern technology, you can use it on any type of website invoice, fully responsive and w3 validated.">
+    <meta name="keywords" content="bill , receipt, tally, invoice, cash memo, invoice html, invoice pdf, invoice print, invoice templates, multipurpose invoice, template, booking invoice, general invoice, clean invoice, catalog, estimate, proposal">
+    <meta name="author" content="initTheme">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>initBill - invoice & Receipt HTML Template </title>
+    <link rel="icon" type="image/x-icon" sizes="20x20" href="assets/images/icon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main-style.css">
+</head>
+<body class="section-bg-one">
+    <main class="main-wrapper position-relative">
+        <div class="modern-invoice" id="download-section">
+            <!-- invoice Top -->
+            <div class="invoice-top">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 text-center text-sm-start mb-3 mb-sm-1">
+                        <img src="assets/images/logo1.png" style="max-width:120px" title="invoice" alt="invoice">
+                    </div>
+                    <div class="col-xl-6 col-lg-4 col-md-4 col-sm-4 text-center text-sm-start mb-3 mb-sm-1">
+                       <strong class="text-18 mb-3 d-inline-block text-center">Smart BTR Institute of Technology</strong>
+                        <address class="mb-4 address">
+                            <p class="text-center"><i class="fa fa-phone " style="color: red;"></i> +91 8134525898<br></p>
+                           <p class="text-center"> <i class="fa fa-envelope" style="color: red"></i>  SmartBTR@gmail.com<br></p>
+                           <p class="text-center"> <i class="fa fa-map-marker" style="color: red"></i> Gossaigaon,783360
+                            near Padmabil Flyover Highway
+                            Dist: Kokrajhar,BTR(Assam)</p>                        
+                        </address>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 text-center text-sm-end mb-3 mb-sm-1">
+                        <img src="assets/images/itlogo.jpg" style="max-width:120px"title="invoice" alt="invoice">
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <hr>
+            <!-- invoice Details -->
+            <div class="invoice-details mt-20 pt-20">
+                <div class="row">
+                    
+                    <div class="col-sm-12 order-sm-0">
+                        <h2 class="text-center">Admission Receipt</h2>
+                        <address class="mb-4">
+                            Rafsan Jani<br>
+                            16/10 A Banasree<br>
+                            1508C uttor AN<br>
+                            kolkata , india
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <!-- invoice descriptions -->
+            <div class="card mb-3 border-0">
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                    <table class="table mb-0">
+                    <thead class="card-header bg-header">
+                        <tr>
+                            <td class="col-3"><strong>Number</strong></td>
+                            <td class="col-3"><strong>Service</strong></td>
+                            <td class="col-2 text-center"><strong>Rate</strong></td>
+                            <td class="col-1 text-center"><strong>QTY</strong></td>
+                            <td class="col-2 text-end"><strong>Amount</strong></td>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-3">1</td>
+                                <td class="col-3">PHP Develop</td>
+                                <td class="col-2 text-center">$100.00</td>
+                                <td class="col-1 text-center">5</td>
+                                <td class="col-2 text-end">$500.00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>JAVA Develop</td>
+                                <td class="text-center">$100.00</td>
+                                <td class="text-center">1</td>
+                                <td class="text-end">$100.00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>JS Develop</td>
+                                <td class="text-center">$100.00</td>
+                                <td class="text-center">1</td>
+                                <td class="text-end">$100.00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>JS Develop</td>
+                                <td class="text-center">$100.00</td>
+                                <td class="text-center">1</td>
+                                <td class="text-end">$100.00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>JS Develop</td>
+                                <td class="text-center">$100.00</td>
+                                <td class="text-center">1</td>
+                                <td class="text-end">$100.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr  class="card-footer">
+                                <td colspan="4" class="text-end"><strong>Sub Total:</strong></td>
+                                <td class="text-end">$2150.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="text-end"><strong>Tax:</strong></td>
+                                <td class="text-end">$215.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="text-end border-bottom-0"><strong>Total:</strong></td>
+                                <td class="text-end border-bottom-0">$2365.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    </div>
+                </div>
+            </div>
+            <!-- invoice address -->
+            <div class="row">
+                <div class="col-sm-12 mb-10">
+                    <span class="status d-block mb-20"> <strong>Date :</strong> 01-12-2023</span>
+                    <h5 class="mb-2 text-title font-700"> Important: </h5>
+                    <p>This is an electronic generated invoice so doesn't require any signature. </p>
+                    <p>Please read all terms and polices on www.yourdomaon.com for returns, replacement and other issues.</p>
+                </div>
+            </div>
+            <div class="footer-shape">
+                <svg viewBox="0 0 500 200">
+                    <path d="M 0 50 C 150 50 300 0 500 80 L 500 0 L 0 0" fill="#54bdaa"></path>
+                    <path d="M 0 50 C 150 50 330 -30 500 50 L 500 0 L 0 0" fill="#21db84" ></path>
+                <path d="M 0 50 C 215 50 250 0 500 100 L 500 0 L 0 0" fill="#f73e4c" opacity="0.1"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- invoice Bottom  -->
+        <div class="text-center modern-bill-button">
+            <div class="d-print-none d-flex flex-column justify-content-center flex-wrap gap-10 mt-5"> 
+                <a href="javascript:window.print()" class="btn-primary-fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M384 368h24a40.12 40.12 0 0040-40V168a40.12 40.12 0 00-40-40H104a40.12 40.12 0 00-40 40v160a40.12 40.12 0 0040 40h24" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"></path><rect x="128" y="240" width="256" height="208" rx="24.32" ry="24.32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"></rect><path d="M384 128v-24a40.12 40.12 0 00-40-40H168a40.12 40.12 0 00-40 40v24" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"></path><circle cx="392" cy="184" r="24" fill="currentColor"></circle></svg>
+                </a> 
+                <button id="bill-download" class="btn-primary-outline">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M320 336h76c55 0 100-21.21 100-75.6s-53-73.47-96-75.6C391.11 99.74 329 48 256 48c-69 0-113.44 45.79-128 91.2-60 5.7-112 35.88-112 98.4S70 336 136 336h56M192 400.1l64 63.9 64-63.9M256 224v224.03" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path></svg>
+                </button> 
+            </div>
+        </div>
+    </main>
+
+    <!-- jquery-->
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <!-- Plugin -->
+    <script src="assets/js/plugin.js"></script>
+    <!-- Main js-->
+    <script src="assets/js/mian.js"></script>
+</body>
+
+</html>
